@@ -1,5 +1,5 @@
 use rand::Rng;
 
 fn main() {
-    println!("Hello, world!");
+    // println!("Hello, world!");
 }
