@@ -2,6 +2,11 @@ use rand::Rng;
 use std::io;
 
 fn main() {
+    println!(" ");
+    println!("Welcome to my number guessing game!");
+    println!(" ");
+    println!("The random number can be anywhere from -128 to 127");
+    println!(" ");
 //     keep_playing = 'yes'
     let mut keep_playing = String::from("yes");
 // while keep_playing =='yes':
@@ -38,14 +43,27 @@ fn main() {
 //             print('You guessed it!')   
             else{
                 println!("You guessed it!");
+                // println!("Would you like to play again (yes/no");
+                // io::stdin().read_line(&mut keep_playing);
                 break;
             };
         }
 //     print(f'it took you{guess_count} guesses')
         println!("it took you {} guesses", guess_count);
 //     keep_playing = input('Would you like to play again (yes/no)? ')
+        // let keep_playing_bool: bool = true;
+        // if keep_playing_bool == true{
+        //     println!("Would you like to play again (yes/no");
+        //     io::stdin().read_line(&mut keep_playing);
+        //     keep_playing = yes;
+        // }
+        keep_playing.clear();
         println!("Would you like to play again (yes/no");
         io::stdin().read_line(&mut keep_playing);
+        // let keep_playing: i8 = match keep_playing.trim().parse();
+        println!("{}", keep_playing == "no");
+        println!("{}", keep_playing);
+        // break;
     }
 // print('Thank you for playing. Goodbye.')
 println!("Thank you for playing. Goodbye.")
