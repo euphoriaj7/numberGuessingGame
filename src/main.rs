@@ -15,7 +15,7 @@ fn main() {
         let mut magic_number: i8 =rand::thread_rng().gen_range(-128..127); 
 //     guess_count = 0
         let mut guess_count = 0;
-        println!("{}", magic_number);
+        // println!("{}", magic_number);
 //     while guess !=magic_number:
         loop {
 //     guess = -1
@@ -33,16 +33,19 @@ fn main() {
             if guess < magic_number{
 //             print('Higher')
                 println!("Higher");
+                println!(" ");
             }
 //         elif guess > magic_number:
 //             print('Lower')
             else if guess > magic_number{
                 println!("Lower");
+                println!(" ");
             }
 //         else:
 //             print('You guessed it!')   
             else{
                 println!("You guessed it!");
+                println!(" ");
                 // println!("Would you like to play again (yes/no");
                 // io::stdin().read_line(&mut keep_playing);
                 break;
@@ -50,6 +53,7 @@ fn main() {
         }
 //     print(f'it took you{guess_count} guesses')
         println!("it took you {} guesses", guess_count);
+        println!(" ");
 //     keep_playing = input('Would you like to play again (yes/no)? ')
         // let keep_playing_bool: bool = true;
         // if keep_playing_bool == true{
@@ -60,12 +64,15 @@ fn main() {
         keep_playing.clear();
         println!("Would you like to play again (yes/no)");
         io::stdin().read_line(&mut keep_playing);
+        println!(" ");
         // let keep_playing: i8 = match keep_playing.trim().parse();
         // keep_playing = keep_playing.trim();
-        println!("{}", keep_playing == "yes\n");
-        println!("[{}]", keep_playing.trim());
+        // println!("{}", keep_playing == "yes\n");
+        // println!("[{}]", keep_playing.trim());
         // break;
     }
 // print('Thank you for playing. Goodbye.')
-println!("Thank you for playing. Goodbye.")
+println!(" ");
+println!("Thank you for playing. Have a great day.")
+println!(" ");
 }
