@@ -73,6 +73,6 @@ fn main() {
     }
 // print('Thank you for playing. Goodbye.')
 println!(" ");
-println!("Thank you for playing. Have a great day.")
+println!("Thank you for playing. Have a great day.");
 println!(" ");
 }
